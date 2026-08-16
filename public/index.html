@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alset JS Runtime</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: #050505;
+      color: #e0e0e0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px 24px;
+    }
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 900;
+      color: #FFD700;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .tag {
+      font-size: 0.85rem;
+      color: #666;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      max-width: 960px;
+      width: 100%;
+    }
+    a.card {
+      display: block;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 28px 24px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    a.card:hover {
+      border-color: #FFD700;
+      transform: translateY(-2px);
+    }
+    a.card h2 {
+      font-size: 1.15rem;
+      color: #FFD700;
+      margin-bottom: 8px;
+    }
+    a.card p {
+      font-size: 0.9rem;
+      color: #999;
+      line-height: 1.45;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 0.8rem;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <h1>Alset JS Runtime</h1>
+  <p class="tag">Interfaces as Addressable Spaces</p>
+
+  <div class="grid">
+    <a class="card" href="../examples/basic/">
+      <h2>Basic Example</h2>
+      <p>Counter, theme switching and persistent identity with alsetState.</p>
+    </a>
+    <a class="card" href="../examples/forms/">
+      <h2>Forms & Feedback</h2>
+      <p>Login pattern with keys, local validation and status states.</p>
+    </a>
+    <a class="card" href="../examples/telemetry/">
+      <h2>Telemetry / Pulses</h2>
+      <p>Simulated AIP pulse stream addressing nodes by key.</p>
+    </a>
+    <a class="card" href="../examples/studio/">
+      <h2>AlsetStudio IDE</h2>
+      <p>Full visual authoring environment with live preview and component library.</p>
+    </a>
+    <a class="card" href="../examples/components/">
+      <h2>Components Showcase</h2>
+      <p>FormField, StatusBadge, LivePanel and Skeleton — UX patterns in action.</p>
+    </a>
+  </div>
+
+  <footer>
+    Experimental · v0.6.0 Chronos · MIT · Alset Project 2025
+  </footer>
+</body>
+</html>

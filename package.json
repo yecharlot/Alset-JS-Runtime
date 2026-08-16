@@ -1,0 +1,39 @@
+{
+  "name": "alset-js-runtime",
+  "version": "0.6.0",
+  "description": "Alset JS Runtime — Persistent Identity Nodes, Pulse-based interaction (AIP), and a lightweight reactive UI runtime. Interfaces as addressable spaces.",
+  "type": "module",
+  "main": "src/core/AlsetPulseCore.js",
+  "module": "src/core/AlsetPulseCore.js",
+  "exports": {
+    ".": "./src/core/AlsetPulseCore.js",
+    "./core": "./src/core/AlsetPulseCore.js"
+  },
+  "scripts": {
+    "start": "npx --yes serve . -p 3000",
+    "dev": "npx --yes serve . -p 3000",
+    "studio": "npx --yes serve . -p 3001",
+    "docs": "echo 'Documentation is in the docs/ folder (Markdown)'"
+  },
+  "keywords": [
+    "alset",
+    "runtime",
+    "ui",
+    "persistent-identity",
+    "pulse",
+    "aip",
+    "reactive",
+    "identity-nodes",
+    "no-vdom"
+  ],
+  "author": "Alset Project / Yulei Esteban Charlot Poll",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alset-project/alset-js-runtime"
+  },
+  "bugs": {
+    "url": "https://github.com/alset-project/alset-js-runtime/issues"
+  },
+  "homepage": "https://github.com/alset-project/alset-js-runtime#readme"
+}
